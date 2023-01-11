@@ -1,0 +1,21 @@
+﻿<?Just to keep things simple, both of these files are referred to as a single file. >
+    <?There are generally two files with any XAML file, the .xaml file itself, >
+    <?and a corresponding code file that is a child item of it in the Solution Explorer. >
+    <?The .xaml file contains XAML markup and the code file contains code created by the user to interact with the XAML markup.?>
+
+<?The App.xaml file contains app-wide XAML resources, such as colors, styles, or templates>
+    
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Notes"
+             x:Class="Notes.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
